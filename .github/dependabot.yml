@@ -1,0 +1,13 @@
+version: 2
+updates:
+  # Verifica atualizações para o Angular (npm)
+  - package-ecosystem: "npm"
+    directory: "/frontend"
+    schedule:
+      interval: "weekly"
+
+  # Verifica atualizações para o FastAPI (pip)
+  - package-ecosystem: "pip"
+    directory: "/backend"
+    schedule:
+      interval: "weekly"
