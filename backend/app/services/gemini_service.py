@@ -59,7 +59,10 @@ class GeminiService:
         """
 
         try:
-            response = self.model.generate_content(prompt)
+            response = self.model.generate_content(
+                prompt,
+                generation_config={"response_mime_type": "application/json"}
+            )
             # Tentar fazer o parse do JSON da resposta
             text = response.text.strip()
             # Limpar formatações comuns do Markdown se a IA enviar
