@@ -1,0 +1,13 @@
+# <tipo>(<escopo>): <assunto>
+# 
+# Corpo da mensagem: Explique O QUÊ e o PORQUÊ foi feito.
+#
+# Rodapé: Fechamento de Issues ou Breaking Changes (Ex: Fixes #123)
+#
+# Tipos permitidos:
+# feat     : Nova funcionalidade
+# fix      : Correção de bug
+# docs     : Documentação
+# refactor : Refatoração de código
+# test     : Adição ou correção de testes
+# chore    : Atualização de build, pacotes, etc.
