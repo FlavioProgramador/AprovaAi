@@ -36,11 +36,11 @@ export class DashboardComponent {
     this.analysisResult = null;
 
     this.editalService.analyzeEdital(this.selectedFile).subscribe({
-      next: (response) => {
+      next: (response: AnalysisResponse) => {
         this.analysisResult = response;
         this.isLoading = false;
       },
-      error: (err) => {
+      error: (err: any) => {
         console.error(err);
         this.isLoading = false;
         this.errorMessage = err.error?.detail || 'Ocorreu um erro ao analisar o edital. Verifique se o servidor backend está ativo.';
